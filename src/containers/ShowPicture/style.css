@@ -1,0 +1,139 @@
+:local(.backgroundNone){
+    display: none;
+}
+
+:local(.background){
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    background: #2d2a2af0;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100% ;
+    z-index: 10;
+    animation: scale 0.5s ease-in-out ;
+    animation-fill-mode: both;
+}
+
+:local(.row){
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+}
+:local(.imageWrapper){
+    text-align: center;
+}
+
+:local(.image) {
+    max-width: 100%;
+}
+
+:local(.ArrowWrapper) {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+}
+
+:local(.RightArrow) {
+    height: 50px;
+    width: 50px;
+    transform: translateX(-71%) rotate(45deg);
+    background: white;
+}
+
+:local(.LeftArrow) {
+    height: 50px;
+    width: 50px;
+    transform: translateX(71%) rotate(-45deg);
+    background: white;
+}
+
+
+
+:local(.TopButtons){
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 30px;
+}
+:local(.leftCross){
+    height: 30px;
+    width: 5px;
+    background: white;
+    border: 1px;
+    border-radius: 25px;
+    transform: rotate(-45deg);
+    position: absolute;
+}
+:local(.rightCross){
+    height: 30px;
+    width: 5px;
+    background: white;
+    border: 1px;
+    border-radius: 25px;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+:local(.crossWrapper){
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 10;
+
+}
+
+:local(.Button){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@keyframes scale {
+    0%{
+        background: none;
+        transform: scale(0.05);
+    }
+    60%{
+        background: none;
+
+    }
+    100%{
+        background: #2d2a2af0;
+        transform: scale(1);
+    }
+
+}
+
+@media all and (max-width: 767px) {
+    :local(.RightWrapper) {
+        height: 100% !important;
+        width: 20%!important;
+        position: absolute!important;
+        left: 96%!important;
+        top: 50%!important;
+        transform: translateX(-50%) translateY(-50%) !important;
+    }
+    :local(.LeftWrapper) {
+        height: 100% !important;
+        width: 30%!important;
+        position: absolute!important;
+        left: 4%!important;
+        top: 50%!important;
+        transform: translateX(-50%) translateY(-50%) !important;
+        z-index: 10;
+    }
+    :local(.RightArrow) {
+        background: #ffffff61;
+    }
+
+    :local(.LeftArrow) {
+        background: #ffffff61;
+    }
+}

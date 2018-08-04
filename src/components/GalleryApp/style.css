@@ -1,0 +1,25 @@
+:local(.container){
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+
+}
+
+
+:local(.row) {
+    background: #86a4af42;
+    padding-bottom: 2%;
+    padding-top: 1%;
+    border: 1px solid white;
+
+}
+
+
+:local(.commentWrapper){
+    min-height: 194px;
+    padding-left: 50px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    border: 1px solid white;
+}

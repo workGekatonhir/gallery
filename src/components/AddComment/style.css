@@ -1,0 +1,31 @@
+:local(.wrapper){
+    margin: 30px auto 30px auto;
+    max-width: 600px;
+    border: 1px solid white;
+    border-radius: 45px;
+    padding: 20px  ;
+    background: #63636321;
+}
+:local(.btn){
+    border-left: none !important;
+    border-bottom-right-radius: 25px !important;
+    border-top-right-radius: 25px !important;
+    font-size: 12px!important;
+    font-weight: bold!important;
+}
+:local(.btn:focus){
+    border-left: none !important;
+    box-shadow: none !important;
+}
+
+
+:local(.input){
+    border-bottom-left-radius: 25px !important;
+    border-top-left-radius: 25px!important;
+    border: 1px solid  #6c757d !important;
+    border-right: none !important;
+}
+
+:local(.input:focus){
+   box-shadow: none!important;
+}
